@@ -1,6 +1,6 @@
 ---
 id: "yanni-loukissas"
-image: "/seminars/yanni-loukissas.png"
+image: "seminars/yanni-loukissas.png"
 name: "Yanni A. Loukissas"
 date: "2025-02-27"
 affiliation: "Georgia Tech Institute"
