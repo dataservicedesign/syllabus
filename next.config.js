@@ -8,9 +8,9 @@ module.exports = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'dataservicedesign.github.io',
+        hostname: 'dataservicedesign.github.io/syllabus',
         port: '',
-        pathname: '/syllabus',
+        pathname: '/',
         search: '',
       },
     ],
