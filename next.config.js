@@ -4,4 +4,4 @@ module.exports = {
   output: 'export',
   basePath: isProd ? '/syllabus' : '',
   trailingSlash: true,
-}ne
+}
