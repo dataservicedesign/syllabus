@@ -1,0 +1,14 @@
+.button {
+  background: var(--var-nav);
+  backdrop-filter: blur(10px);
+  padding: 0.7rem 0.7rem 0.9rem 0.7rem;
+  transition: all .3s;
+  border-radius: 5px;
+  outline: 1px solid var(--var-dark);
+  text-align: center;
+}
+
+.button:hover {
+  padding: 0.7rem 1.1rem 0.9rem 1.1rem;
+  box-shadow: 0 0 10px var(--var-dark);
+}

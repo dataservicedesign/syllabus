@@ -1,0 +1,11 @@
+.nav {
+  grid-column: span 5;
+  position: sticky;
+  top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  z-index: 9999;
+  color: var(--var-text);
+}
