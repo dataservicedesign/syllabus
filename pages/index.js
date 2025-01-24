@@ -82,7 +82,7 @@ style={{ width: "100%", height: "auto" }}/></div>
     {allPostsData.map(s => (
       
       <div style={{ gridColumn: "auto"}}>
-        {/* <p><Image src={s.image} width={80} height={80} /></p> */}
+        <p><Image src={`/syllabus/seminars/${s.id}.png`} width={100} height={100} /></p>
         <h5>{s.date}</h5>
         <h4>{s.name} -  {s.affiliation}</h4>
       <p>{s.bio}</p>
