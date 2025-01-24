@@ -1,11 +1,14 @@
 .nav {
+  background: linear-gradient(180deg, #ff6333 70%, #ff633300 100%);
   grid-column: span 5;
   position: sticky;
-  top: 1rem;
+  top: 0;
+  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   z-index: 9999;
   color: var(--var-text);
+  font-size: 0.9rem;
 }

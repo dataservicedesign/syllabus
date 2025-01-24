@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-  --main: #ff6f43;
+  --main: #ff6333;
   --var-nav: #C6C7C499;
   --var-dark: #A4A6A0;
   --var-text: #1b2021;
@@ -16,9 +16,7 @@ body {
   background-color: var(--main);
   padding: 0;
   margin: 0;
-  font-family: "Castoro", -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
+  font-family: "Castoro", serif;
   font-size: 15px;
   color: var(--var-text);
   line-height: 1.5;
@@ -40,9 +38,13 @@ dialog [data-rmiz-modal-overlay="visible"] {
 }
 
 a, a:visited {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI,
+  Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+  sans-serif;
+  font-size: 0.9rem;
   font-weight: bold;
   color: var(--accent) !important;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 em {
@@ -62,6 +64,7 @@ em {
 
 main {
   padding: 1.5rem;
+  padding-top: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-flow: row;
@@ -98,12 +101,6 @@ main p {
 }
 
 .abstract {
-  grid-column: span 4;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.text {
   grid-column: span 3;
   font-size: 1.4rem;
   margin-bottom: 2rem;
@@ -233,6 +230,10 @@ code {
   /* body {
     border-right: 5px solid var(--accent-2);
   } */
+
+  body {
+    font-size: 14px;
+  }
 
   .grid {
     width: 100%;
