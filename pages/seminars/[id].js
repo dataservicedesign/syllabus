@@ -34,6 +34,7 @@ export default function Post({ postData }) {
       </Head>
       <h4>{postData.name}</h4>
       <h4>{postData.affiliation}</h4>
+      <h4>{postData.date}</h4>
       <div className={styles.postContainer}>
       <blockquote className={styles.blockquote}>{postData.bio}</blockquote>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />

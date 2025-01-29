@@ -231,10 +231,6 @@ code {
     border-right: 5px solid var(--accent-2);
   } */
 
-  body {
-    font-size: 14px;
-  }
-
   .grid {
     width: 100%;
     flex-direction: column;
