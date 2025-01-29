@@ -5,6 +5,7 @@ export default function Layout({ children }) {
   return (
     <>
       <main>
+
       <Navigation />
         {children}
         </main>

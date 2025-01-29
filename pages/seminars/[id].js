@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 import Head from "next/head";
 import Layout from "../../components/layout";
 import styles from "../../styles/utils.module.css";
@@ -25,7 +27,14 @@ export async function getStaticPaths() {
 }
 
 export default function Post({ postData }) {
-  const images = postData.images;
+  const [formattedDate, setFormattedDate] = useState('');
+
+  useEffect(() => {
+    const date = new Date(postData.date);
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    setFormattedDate(date.toLocaleDateString('en-US', options));
+  }, [postData.date]);
+
 
   return (
     <Layout>
@@ -34,7 +43,7 @@ export default function Post({ postData }) {
       </Head>
       <h4>{postData.name}</h4>
       <h4>{postData.affiliation}</h4>
-      <h4>{postData.date}</h4>
+      <h4>{formattedDate}</h4>
       <div className={styles.postContainer}>
       <blockquote className={styles.blockquote}>{postData.bio}</blockquote>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
