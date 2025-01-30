@@ -69,10 +69,7 @@ export default function Home({ allPostsData }) {
     <p>Starting from these premises, the class will approach “data practices” for service design through a three-stage learning framework. Each stage will include dedicated lectures, hands-on activities and involve specific guest experts.
     </p>
     </div>
-    <div><Image src={"/syllabus/cover.png"} width={0}
-height={0}
-sizes="100%"
-style={{ width: "100%", height: "auto" }}/></div>
+    <div><Image src={"/syllabus/cover.png"} width={0} height={0} sizes="100%" style={{ width: "100%", height: "auto" }}/></div>
     <div style={{ gridColumnStart: 1}}>
       <h4>Course structure</h4>
     </div>
@@ -92,7 +89,6 @@ style={{ width: "100%", height: "auto" }}/></div>
     <h4>Guest lectures</h4>
     </div>
     {allPostsData.map((s, index) => (
-      
       <div style={{ gridColumn: "auto"}}>
         <p><Image src={`/syllabus/seminars/${s.id}.png`} width={100} height={100} /></p>
         <h5>{formattedDates[index]}</h5>
@@ -103,9 +99,8 @@ style={{ width: "100%", height: "auto" }}/></div>
     <div style={{ gridColumnStart: 1 }}>
     <h4>Faculty</h4>
     </div>
-    <div><Image src={`/syllabus/francesco-leoni.png`} width={100} height={100} /><h5>Teacher</h5><h4>Francesco Leoni</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-    <div><Image src={`/syllabus/andrea-benedetti.png`} width={100} height={100} /><h5>Teacher</h5><h4>Andrea Benedetti</h4><p>PhD in Design at Politecnico di Milano. His research is explores the intersection of data visualization, creative programming and communication design in shaping awareness of how data is produced online by users. He has been teaching data visualization to students of various background since 2017.</p></div>
-    <div><h5>Teaching Assistant</h5><h4>Marianne Fusco</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+    <div><Image src={`/syllabus/francesco-leoni.png`} width={100} height={100} /><h4>Francesco Leoni</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+    <div><Image src={`/syllabus/andrea-benedetti.png`} width={100} height={100} /><h4>Andrea Benedetti</h4><p>PhD in Design at Politecnico di Milano. His research is explores the intersection of data visualization, creative programming and communication design in shaping awareness of how data is produced online by users. He has been teaching data visualization to students of various background since 2017.</p></div>
     </main>
     <Footer />
     </>
