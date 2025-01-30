@@ -6,6 +6,7 @@ import styles from "../../styles/utils.module.css";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import LinkItem from "../../components/LinkItem";
+import Image from 'next/image';
 
 import { getAllPostIds, getPostData } from "../../lib/projectPost";
 
@@ -48,6 +49,7 @@ export default function Post({ postData }) {
       <blockquote className={styles.blockquote}>{postData.bio}</blockquote>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>
+      <div><Zoom classDialog={"custom-zoom"}><Image src={`/syllabus/${postData.image}`} width={0} height={0} sizes="100%" style={{ width: "100%", height: "auto" }}/></Zoom></div>
     </Layout>
   );
 }

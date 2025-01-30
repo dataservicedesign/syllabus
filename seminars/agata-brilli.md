@@ -1,6 +1,6 @@
 ---
 id: "agata-brilli"
-image: "/syllabus/seminars/paolo-ciuccarelli.png"
+image: "seminars/agata-brilli.png"
 name: "Agata Brilli"
 date: "2025-03-13"
 affiliation: "PagoPA"

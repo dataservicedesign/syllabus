@@ -64,7 +64,7 @@
 .postContainer {
   width: 100%;
   margin: auto;
-  grid-column: span 4;
+  grid-column: span 3;
 }
 
 .imageStrip {
