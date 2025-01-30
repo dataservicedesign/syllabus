@@ -17,7 +17,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Castoro", serif;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--var-text);
   line-height: 1.5;
   /* border-right: 10px solid var(--accent-2); */
@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5 {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI,
   Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
   sans-serif;
+}
+
+h4 {
+  font-size: 0.9rem;
 }
 
 dialog [data-rmiz-modal-overlay="visible"] {

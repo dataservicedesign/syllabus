@@ -3,21 +3,25 @@ import { useEffect, useState } from 'react';
 import Head from "next/head";
 import Navigation from "../components/nav";
 import { getSortedPostsData } from "../lib/projectPost";
+import { getSortedCourseData } from '../lib/coursePost';
 import Footer from "../components/footer";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "react-bootstrap-icons";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
+  const allCourseData = getSortedCourseData();
   return {
     props: {
       allPostsData,
+      allCourseData
     },
   };
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, allCourseData }) {
   const [formattedDates, setFormattedDates] = useState('');
   
   useEffect(() => {
@@ -86,11 +90,20 @@ export default function Home({ allPostsData }) {
       <p>Service designers who seek to develop new services centered on available data must engage with dimensions pertaining to regulation (e.g., privacy), data governance and ownership. Moreover, they must consider the legal and ethical implications of accessing and using data that describe certain populations.</p>
     </div>
     <div style={{ gridColumnStart: 1 }}>
+    <h4>Course Journal</h4>
+    </div>
+    {allCourseData.map((s, index) => (
+      <div style={{ gridColumn: "auto"}}>
+        <h4>{s.title}</h4>
+        <p>{formattedDates[index]}</p>
+      <Link href={`journal/${s.id}`}>Read more</Link></div>
+    ))}
+    <div style={{ gridColumnStart: 1 }}>
     <h4>Guest lectures</h4>
     </div>
     {allPostsData.map((s, index) => (
       <div style={{ gridColumn: "auto"}}>
-        <p><Image src={`/syllabus/seminars/${s.id}.png`} width={100} height={100} /></p>
+        <div style={{ width: "100px"}}><Zoom classDialog={"custom-zoom"}><img src={s.image} style={{width: "100%", marginBottom: "0.5rem"}}/></Zoom></div>
         <h5>{formattedDates[index]}</h5>
         <h4>{s.name} -  {s.affiliation}</h4>
       <p>{s.bio}</p>
@@ -99,8 +112,9 @@ export default function Home({ allPostsData }) {
     <div style={{ gridColumnStart: 1 }}>
     <h4>Faculty</h4>
     </div>
-    <div><Image src={`/syllabus/francesco-leoni.png`} width={100} height={100} /><h4>Francesco Leoni</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-    <div><Image src={`/syllabus/andrea-benedetti.png`} width={100} height={100} /><h4>Andrea Benedetti</h4><p>PhD in Design at Politecnico di Milano. His research is explores the intersection of data visualization, creative programming and communication design in shaping awareness of how data is produced online by users. He has been teaching data visualization to students of various background since 2017.</p></div>
+    
+    <div><div style={{ width: "100px"}}><Zoom classDialog={"custom-zoom"}><img src="/syllabus/francesco-leoni.png" style={{width: "100%", marginBottom: "0.5rem"}}/></Zoom></div><h4>Francesco Leoni</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+    <div><div style={{ width: "100px"}}><Zoom classDialog={"custom-zoom"}><img src="/syllabus/andrea-benedetti.png" style={{width: "100%", marginBottom: "0.5rem"}}/></Zoom></div><h4>Andrea Benedetti</h4><p>PhD in Design at Politecnico di Milano. His research is explores the intersection of data visualization, creative programming and communication design in shaping awareness of how data is produced online by users. He has been teaching data visualization to students of various background since 2017.</p></div>
     </main>
     <Footer />
     </>
