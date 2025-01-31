@@ -103,7 +103,7 @@ export default function Home({ allPostsData, allCourseData }) {
     </div>
     {allPostsData.map((s, index) => (
       <div style={{ gridColumn: "auto"}}>
-        <div style={{ width: "100px"}}><Zoom classDialog={"custom-zoom"}><img src={s.image} style={{width: "100%", marginBottom: "0.5rem"}}/></Zoom></div>
+        <div style={{ width: "100px"}}><Zoom classDialog={"custom-zoom"}><img src={`/syllabus/seminars/${s.id}.png`} style={{width: "100%", marginBottom: "0.5rem"}}/></Zoom></div>
         <h5>{formattedDates[index]}</h5>
         <h4>{s.name} -  {s.affiliation}</h4>
       <p>{s.bio}</p>
