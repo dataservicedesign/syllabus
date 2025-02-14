@@ -89,7 +89,7 @@ export default function Home({ allPostsData, allCourseData }) {
       <h4>Designing data-centric services</h4>
       <p>Service designers who seek to develop new services centered on available data must engage with dimensions pertaining to regulation (e.g., privacy), data governance and ownership. Moreover, they must consider the legal and ethical implications of accessing and using data that describe certain populations.</p>
     </div>
-    <div style={{ gridColumnStart: 1 }}>
+    {/*<div style={{ gridColumnStart: 1 }}>
     <h4>Course Journal</h4>
     </div>
     {allCourseData.map((s, index) => (
@@ -97,7 +97,7 @@ export default function Home({ allPostsData, allCourseData }) {
         <h4>{s.title}</h4>
         <p>{formattedDates[index]}</p>
       <Link href={`journal/${s.id}`}>Read more</Link></div>
-    ))}
+    ))}*/}
     <div style={{ gridColumnStart: 1 }}>
     <h4>Guest lectures</h4>
     </div>
