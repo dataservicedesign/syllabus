@@ -105,9 +105,8 @@ export default function Home({ allPostsData, allCourseData }) {
       <div style={{ gridColumn: "auto"}}>
         <div style={{ width: "100px"}}><Zoom classDialog={"custom-zoom"}><img src={`/syllabus/seminars/${s.id}.png`} style={{width: "100%", marginBottom: "0.5rem"}}/></Zoom></div>
         <h5>{formattedDates[index]}</h5>
-        <h4>{s.name} -  {s.affiliation}</h4>
-      <p>{s.bio}</p>
-      <Link href={`seminars/${s.id}`}>Read more</Link></div>
+        <h4><Link href={`seminars/${s.id}`}>{s.name} -  {s.affiliation}</Link></h4>
+      <p>{s.bio}</p></div>
     ))}
     <div style={{ gridColumnStart: 1 }}>
     <h4>Faculty</h4>

@@ -63,7 +63,6 @@
 
 .postContainer {
   width: 100%;
-  margin: auto;
   grid-column: span 3;
 }
 
