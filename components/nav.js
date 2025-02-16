@@ -5,8 +5,8 @@ function Nav() {
   return (
     <div className={styles.nav}>
       <div><Link href="/">Data and Service Design</Link></div>
-      <div>PSSD Design School</div>
-      <div>Politecnico di Milano</div>
+      <div><Link href="https://www.pssd.polimi.it/">PSSD Design School</Link></div>
+      <div><Link href="https://www.polimi.it/">Politecnico di Milano</Link></div>
     </div>
   );
 }

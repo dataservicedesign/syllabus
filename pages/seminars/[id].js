@@ -41,11 +41,11 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.name}</title>
       </Head>
-      <h4>{postData.name}</h4>
-      <h4>{postData.affiliation}</h4>
+      <h4>{postData.name}, {postData.affiliation}</h4>
       <h4>{formattedDate}</h4>
+      <h4>{postData.title}</h4>
       <div className={styles.postContainer}>
-      <blockquote className={styles.blockquote}>{postData.bio}</blockquote>
+      <blockquote className={styles.blockquote}>{postData.abstract}</blockquote>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>
       <div><Zoom classDialog={"custom-zoom"}><Image src={`/syllabus/${postData.image}`} width={0} height={0} sizes="100%" style={{ width: "100%", height: "auto" }}/></Zoom></div>
