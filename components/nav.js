@@ -1,5 +1,6 @@
 import styles from "./nav.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 function Nav() {
   return (
