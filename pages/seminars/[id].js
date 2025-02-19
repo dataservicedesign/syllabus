@@ -48,7 +48,7 @@ export default function Post({ postData }) {
       <blockquote className={styles.blockquote}>{postData.abstract}</blockquote>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </div>
-      <div><Zoom classDialog={"custom-zoom"}><Image src={`/syllabus/${postData.image}`} width={0} height={0} sizes="100%" style={{ width: "100%", height: "auto" }}/></Zoom></div>
+      <div><Zoom classDialog={"custom-zoom"}><Image src={`/syllabus/seminars/${postData.id}.png`} width={0} height={0} sizes="100%" style={{ width: "100%", height: "auto" }}/></Zoom></div>
     </Layout>
   );
 }
