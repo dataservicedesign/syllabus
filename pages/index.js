@@ -97,15 +97,15 @@ export default function Home({ allPostsData, allCourseData }) {
     </div>
     <div>
     <h4>Data-driven research for service design</h4>
-    <p>Service designers use a codified set of methods and tools for understanding service users’ needs and relationships within services. This stage of the course will focus on how service methods/tools can be integrated with the collection and analysis of heterogeneous data sources (for example: available from the web and social media).</p>
+    <p>This stage of the course will focus on the basics of accessing and manipulating heterogeneous data sources, such as those available from the web and social media. At this stage, students will be invited not only to learn how to work with data but also to understand “hands-on” how datasets have been constructed and for which representation purpose.</p>
     </div>
     <div>
     <h4>Data-driven service design representations</h4>
-    <p>Service designers work with service representations, using a series of tangible and intangible materials to prototype the services they envision. These representations are meant to engage with final users and stakeholders to refine initial service ideas. During this stage of the course, students will learn how to substantiate these service representations with data.</p>
+    <p>Service designers use service representations and prototyping to engage with final users and stakeholders (e.g., to refine initial service ideas). This stage of the course will focus on how to work with data in a service representation perspective, and which methods/tools can be used for the collection, analysis and visualization of heterogeneous data sources.</p>
     </div>
     <div>
     <h4>Designing data-centric services</h4>
-    <p>Service designers who seek to develop new services centered on available data must engage with dimensions pertaining to regulation (e.g., privacy), data governance and ownership. Moreover, they must consider the legal and ethical implications of accessing and using data that describe certain populations.</p>
+    <p>Service designers who seek to develop new services centered on available data must engage with dimensions pertaining to regulation, privacy, data governance and ownership. Moreover, they must consider the legal and ethical implications of accessing and using data that describe certain populations. At this stage, the students will be asked to self-reflect on the data they worked with in the previous stage and imagine possible ideas of services centered on the connection between several data sources.</p>
     </div>
     {/*<div style={{ gridColumnStart: 1, borderTop: "2px solid #1b2021" }}>
       <h4>Course Journal</h4>
