@@ -44,13 +44,13 @@ export default function Home({ allPostsData, allCourseData }) {
     <meta property="og:url" content="https://dataservicedesign.github.io/syllabus" key="og:url"/>
     <meta property="og:title" content="Data and Service Design - Politecnico Milano" key="og:title"/>
     <meta property="og:description" content="A course on data practices and service design at Politecnico Milano School of Design, Master in Product Service System Design" key="og:description"/>
-    <meta property="og:image" content="/og-image.png" key="og:image"/>
+    <meta property="og:image" content="/syllabus/og-image.png" key="og:image"/>
     
     <meta property="twitter:card" content="summary_large_image" key="twitter:card"/>
     <meta property="twitter:url" content="https://dataservicedesign.github.io/syllabus" key="twitter:url"/>
     <meta property="twitter:title" content="Data and Service Design - Politecnico Milano" key="twitter:title"/>
     <meta property="twitter:description" content="A course on data practices and service design at Politecnico Milano School of Design, Master in Product Service System Design" key="twitter:description"/>
-    <meta property="twitter:image" content="/og-image.png" key="twitter:image"/>
+    <meta property="twitter:image" content="/syllabus/og-image.png" key="twitter:image"/>
     
     </Head>
     <main>
