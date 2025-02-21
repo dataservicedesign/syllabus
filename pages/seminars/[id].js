@@ -39,7 +39,9 @@ export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
-        <title>{postData.name}</title>
+        <title>{postData.name} - Data and Service Design</title>
+        <meta property="twitter:image" content={`/syllabus/seminars/${postData.id}.png`} key="twitter:image"/>
+        <meta property="og:image" content={`/syllabus/seminars/${postData.id}.png`} key="og:image"/>
       </Head>
       <h4>{postData.name}, {postData.affiliation}</h4>
       <h4>{formattedDate}</h4>
