@@ -40,6 +40,15 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>{postData.name} - Data and Service Design</title>
+        <meta property="og:type" content="website" key="og:type"/>
+        <meta property="og:url" content="https://dataservicedesign.github.io/syllabus" key="og:url"/>
+        <meta property="og:title" content={`${postData.name} - Data and Service Design`} key="og:title"/>
+        <meta property="og:description" content={postData.bio} key="og:description"/>
+
+        <meta property="twitter:card" content="summary_large_image" key="twitter:card"/>
+        <meta property="twitter:url" content="https://dataservicedesign.github.io/syllabus" key="twitter:url"/>
+        <meta property="twitter:title" content={`${postData.name} - Data and Service Design`} key="twitter:title"/>
+        <meta property="twitter:description" content={postData.bio} key="twitter:description"/>
         <meta property="twitter:image" content={`/syllabus/seminars/${postData.id}.png`} key="twitter:image"/>
         <meta property="og:image" content={`/syllabus/seminars/${postData.id}.png`} key="og:image"/>
       </Head>
