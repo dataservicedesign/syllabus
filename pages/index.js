@@ -58,7 +58,7 @@ export default function Home({ allPostsData, allCourseData }) {
     
     <div className={"abstract"}>
     <p>
-    The course “Data and Service Design: Designing Data-centric Services” is part of the Master of Product Service System Design of the School of Design (A.Y. 2024/2025). It intends to provide service design students with the conceptual and theoretical tools to understand the “datafication of society” and integrate data as part of their service design practice.</p>
+    The course <b>“Data and Service Design: Designing Data-centric Services”</b> is part of the Master of Product Service System Design of the School of Design (A.Y. 2024/2025). It intends to provide service design students with the conceptual and theoretical tools to understand the “datafication of society” and integrate data as part of their service design practice.</p>
     
     <p>Throughout an approach both theoretical and practical, the students will investigate the main topics in the contemporary data landscape. They will relate to them the service design perspective under the notion of data-centric services, while engaging in data practices hands-on.</p>
     
