@@ -41,13 +41,13 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.name} - Data and Service Design</title>
         <meta itemprop="name" content={`${postData.name.trim()} - Data and Service Design`} />
-        <meta itemprop="description" content={postData.bio ? postData.bio.trim() : "A course on data practices and service design at Politecnico Milano School of Design, Master in Product Service System Design"} />
+        <meta itemprop="description" content={postData.abstract ? postData.abstract.trim() : "A course on data practices and service design at Politecnico Milano School of Design, Master in Product Service System Design"} />
         <meta itemprop="image"  content={`/syllabus/seminars/${postData.id}.png`} />
 
         <meta property="og:type" content="website" key="og:type"/>
         <meta property="og:url" content="https://dataservicedesign.github.io/syllabus" key="og:url"/>
         <meta property="og:title" content={`${postData.name.trim()} - Data and Service Design`} key="og:title"/>
-        <meta property="og:description" content={postData.bio ? postData.bio.trim() : "A course on data practices and service design at Politecnico Milano School of Design, Master in Product Service System Design"} key="og:description"/>
+        <meta property="og:description" content={postData.abstract ? postData.abstract.trim() : "A course on data practices and service design at Politecnico Milano School of Design, Master in Product Service System Design"} key="og:description"/>
 
         <meta property="twitter:card" content="summary_large_image" key="twitter:card"/>
         <meta property="twitter:url" content="https://dataservicedesign.github.io/syllabus" key="twitter:url"/>
