@@ -122,9 +122,9 @@ export default function Home({ allPostsData, allCourseData }) {
       {allPostsData.map((s, index) => (
         <div style={{ gridColumn: "auto"}}>
         <div style={{ width: "100px"}}><Zoom classDialog={"custom-zoom"}><img src={`/syllabus/seminars/${s.id}.png`} style={{width: "100%", marginBottom: "0.5rem"}}/></Zoom></div>
-        <h5>{formattedDates[index]}</h5>
+        <h4>{formattedDates[index]}</h4>
         <h4><Link href={`seminars/${s.id}`}>{s.name} -  {s.affiliation}</Link></h4>
-        <p><i>{s.title}</i></p></div>
+        <h4><i>"{s.title}"</i></h4></div>
       ))}
       <div style={{ gridColumnStart: 1, borderTop: "2px solid #1b2021" }}>
       <h4>Faculty</h4>
