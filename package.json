@@ -1,12 +1,12 @@
 {
   "private": true,
   "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "export": "next export",
-  "start": "next start",
-  "deploy": "npm run build && npm run export"
-},
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "deploy": "npm run build && npm run export"
+  },
   "dependencies": {
     "@citation-js/plugin-doi": "^0.6.1",
     "bibliography": "^0.1.0",
@@ -19,6 +19,7 @@
     "react": "^18",
     "react-bootstrap-icons": "^1.10.2",
     "react-dom": "^18",
+    "react-icons": "^5.5.0",
     "react-medium-image-zoom": "^5.1.2",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1"
