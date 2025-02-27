@@ -58,7 +58,7 @@ export default function Post({ postData }) {
       </Head>
       <h4>{postData.name}, {postData.affiliation}</h4>
       <h4>{formattedDate}</h4>
-      <h4>"{postData.title}"</h4>
+      <h4>{postData.title ? `"${postData.title}"` : null}</h4>
       <div className={styles.postContainer}>
       <blockquote className={styles.blockquote}>{postData.abstract}</blockquote>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
