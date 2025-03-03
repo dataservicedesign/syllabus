@@ -9,6 +9,7 @@ abstract: "Challenging the way public services are accessed by the humans who ne
 We set out to explore the possibility of sharing data about services with the humans who need them, and shifting focus from benefitting the system towards benefitting the human. It has led to a wild ride touching on policy nudging, service design, AI, democratic use of data, data interoperability and starting where you are. 
 
 We have ended up with a functioning service - but does it provide clarity for people or just add to the noise? Our session will allow us to explore the challenges and opportunities we faced."
+title: "Embracing the messiness: designing and implementing a digital guide for navigating Regional welfare services based on several public data sources"
 ---
 
 Ruth Lund serves as the Project Manager at Samordningsförbundet Centrala Östergötland, a coalition of organizations aiming to streamline communication between various public agencies in Sweden. She has led several innovative projects focussed on services for individuals with complex welfare needs, collaborating with universities such as Linköping, Karlstad, Reykjavik, and Stirling to improve service delivery. Ruth is currently spearheading the development of 'Välfärdsguiden' (the Welfare Guide), a digital platform designed to assist individuals navigating the welfare system, with plans to incorporate AI for personalized guidance.
