@@ -358,14 +358,14 @@ export default function Home({ allPostsData, allCourseData }) {
           <h4>Teaching assistant</h4>
         </div>
         <div>
-          <div style={{ width: "100px" }}>
+          {/* <div style={{ width: "100px" }}>
             <Zoom classDialog={"custom-zoom"}>
               <img
                 src="/syllabus/andrea-benedetti.png"
                 style={{ width: "100%", marginBottom: "0.5rem" }}
               />
             </Zoom>
-          </div>
+          </div> */}
           <h4>Marianne Fosca Stahl</h4>
           <p>
             Industrial designer with a degree in Arts from Pontificia
