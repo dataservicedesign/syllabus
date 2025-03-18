@@ -366,11 +366,15 @@ export default function Home({ allPostsData, allCourseData }) {
               />
             </Zoom>
           </div>
-          <h4>Marianne Fosca</h4>
+          <h4>Marianne Fosca Stahl</h4>
           <p>
-            PhD in Design, currently UX/UI Designer at Università la Statale
-            Milano. His work revolves around using data to communicate invisible
-            and complex issues.
+            Industrial designer with a degree in Arts from Pontificia
+            Universidad Católica del Perú for over ten years back in Perú, and
+            participated in projects of different natures fixing the best
+            solution for them. Interested in understanding better how to design
+            life-centric solutions, she recently graduated from the Specialized
+            Master of Service Design in POLI.design and moved to Milan to start
+            anew.
           </p>
         </div>
       </main>
