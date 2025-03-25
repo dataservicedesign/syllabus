@@ -4,7 +4,7 @@ image: "seminars/petter-falk.png"
 name: "Petter Falk"
 date: "2025-04-10"
 affiliation: "Karlstad University"
-abstract: ""
+abstract: "This presentation explores the entanglement of data and democracy, focusing on how data-driven logics are reshaping public services, the political ideals that underpin them, and the role of design.Drawing on ethnographic research and data experiments at the intersection of data practitioners and policymakers, Petter Falk’s research examines the ideological undercurrents of datafication—such as efficiency, transparency, and innovation—in relation to democratic accountability. The presentation invites a critical reflection on the politics embedded in data infrastructures, the normative visions they carry for the future of democratic governance, and how design can both make and break data as a democratic artifact."
 title: "Data and/in democracy. Power, governance and value in data-driven public services"
 ---
 
